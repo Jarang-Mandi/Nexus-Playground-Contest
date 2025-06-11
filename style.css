@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+  }
+  
+  .container {
+    max-width: 90vw;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+  }
+  
+  #game {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .cell {
+    width: 60px;
+    height: 60px;
+    background: #111;
+    border-radius: 50%;
+    font-size: 28px;
+    color: transparent; /* Emoji disembunyikan */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s, color 0.3s, transform 0.1s;
+  }
+  
+  .cell:active {
+    transform: scale(0.95);
+  }
+  
+  .cell.revealed {
+    background: #eee;
+    color: #000; /* Emoji muncul */
+    cursor: default;
+  }
+  
+  .cell.bomb::after {
+    content: "💣";
+    position: absolute;
+    font-size: 24px;
+  }
+  
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  #message {
+    margin-top: 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  
+  button, select {
+    padding: 8px 16px;
+    font-size: 16px;
+    margin: 5px;
+  }
+  
+  @media (max-width: 400px) {
+    .cell {
+      width: 45px;
+      height: 45px;
+      font-size: 20px;
+    }
+  }
+  
+  

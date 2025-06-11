@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Nexus Scratch Game</h1>
+    <div id="difficulty">
+      <select id="level">
+        <option value="easy">Easy (3x3)</option>
+        <option value="medium">Medium (4x4)</option>
+        <option value="hard">Hard (6x6)</option>
+      </select>
+      <button id="startBtn">Play Game</button>
+    </div>
+    <div id="game"></div>
+    <canvas id="scratchCanvas"></canvas>
+    <div id="message"></div>
+    <button id="restart" style="display:none;">Play Again</button>
+    <button id="toggleMusic">🔊 Music</button>
+  </div>
+
+  <!-- Suara -->
+  <audio id="sound-click" src="sounds/scratch.mp3" preload="auto"></audio>
+  <audio id="sound-win" src="sounds/win.wav" preload="auto"></audio>
+  <audio id="sound-lose" src="sounds/lose.flac" preload="auto"></audio>
+  <audio id="sound-bgm" src="sounds/the-return-of-the-8-bit-era-301292.mp3" preload="auto" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
