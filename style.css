@@ -209,7 +209,7 @@ button:active {
   .cover-canvas{width:59px !important; height:59px !important;}
 
   .container {
-    padding: 30px;
+    padding: 20px;
   }
   .popup-content {
     padding: 18px;
@@ -222,7 +222,7 @@ button:active {
   }
 
   #game {
-    gap: 8px;
+    gap: 15px;
   }
 
   .cell {
