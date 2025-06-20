@@ -204,12 +204,12 @@ button:active {
 }
 
 @media (max-width: 500px) {
-  .cell-wrap{ width: 43px; height: 43px;}
-  .cell { width: 37px; height: 37px; font-size:20px; }
-  .cover-canvas{width:39px !important; height:39px !important;}
+  .cell-wrap{ width: 63px; height: 63px;}
+  .cell { width: 57px; height: 57px; font-size:20px; }
+  .cover-canvas{width:59px !important; height:59px !important;}
 
   .container {
-    padding: 10px;
+    padding: 30px;
   }
   .popup-content {
     padding: 18px;
