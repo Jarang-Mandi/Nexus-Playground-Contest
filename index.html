@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <img src="https://framerusercontent.com/images/GH4eYYlpLF9CjHxi5JWsZT4InA.png" alt="Main Logo" class="main-logo">
-      <h1>
-        Scratch Game
-      </h1>
-      <div id="difficulty">
-        <select id="level">
-          <option value="easy">Easy (3x3)</option>
-          <option value="medium">Medium (4x4)</option>
-          <option value="hard">Hard (6x6)</option>
-        </select>
-        <button id="startBtn">Play Game</button>
-      </div>
-      <div id="game"></div>
-      <canvas id="scratchCanvas"></canvas>
-      <div id="message"></div>
-      <button id="restart" style="display: none">Play Again</button>
-      <button id="toggleMusic">🔊 Music</button>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEXUS Scratch Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Jersey+20&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- POPUP ATURAN -->
+<div id="popup-rules" class="popup-overlay">
+  <div class="popup-content">
+    <button id="popup-close" class="popup-close">✖</button>
+    <h2>📜 Game Rules</h2>
+    <p>
+      🔹 Scratch all the circles without hitting the bomb 💣<br>
+      🔹 Easy & Medium: one bomb in the circle 💣<br>
+      🔹 Hard: two bomb in the circle 💣💣<br><br>
+      Let's Play The Game 🎮
+    </p>
+  </div>
+</div>
 
-    <!-- Suara -->
-    <audio id="sound-click" src="sounds/scratch.mp3" preload="auto"></audio>
+  <div class="container">
+    <img src="https://framerusercontent.com/images/GH4eYYlpLF9CjHxi5JWsZT4InA.png" alt="Main Logo" class="main-logo">
+    <h1>Scratch Game</h1>
+    <div id="difficulty">
+      <select id="level">
+        <option value="easy" selected>Easy (3x3)</option>
+        <option value="medium">Medium (4x4)</option>
+        <option value="hard">Hard (5x5)</option>
+      </select>
+      <button id="startBtn">Play Game</button>
+    </div>
+    <div id="game"></div>
+    <div id="message"></div>
+    <button id="restart" style="display: none">Play Again</button>
+    <button id="toggleMusic">🔊 Music</button>
     <audio id="sound-win" src="sounds/win.wav" preload="auto"></audio>
     <audio id="sound-lose" src="sounds/lose.flac" preload="auto"></audio>
-    <audio
-      id="sound-bgm"
-      src="sounds/the-return-of-the-8-bit-era-301292.mp3"
-      preload="auto"
-      loop
-    ></audio>
-
-    <script src="script.js"></script>
-  </body>
+    <audio id="sound-bgm" src="sounds/the-return-of-the-8-bit-era-301292.mp3" preload="auto" loop></audio>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
