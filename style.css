@@ -222,7 +222,7 @@ button:active {
   }
 
   #game {
-    gap: 15px;
+    gap: 8px;
   }
 
   .cell {
