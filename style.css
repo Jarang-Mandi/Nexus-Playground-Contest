@@ -10,10 +10,11 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
-  padding: 24px;
+  padding: 20px;
   text-align: center;
+  box-sizing: border-box;
   border-radius: 12px;
   background-color: rgba(0, 0, 0, 0.39);
   box-shadow: 0 0 18px rgba(0,0,0,.4);
@@ -25,14 +26,6 @@ body {
   max-width: 40vw;
   display: block;
   margin: 0 auto 16px auto;
-}
-
-.container {
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
-  text-align: center;
-  box-sizing: border-box;
 }
 
 h1 {
