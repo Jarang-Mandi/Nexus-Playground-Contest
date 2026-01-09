@@ -120,6 +120,8 @@ function startGame() {
   msg.textContent = '';
   // disable start to prevent re-entrancy
   start.disabled = true;
+  // disable level selection during active game
+  lvl.disabled = true;
   cellsRevealed = 0;
   gameActive = true; // LOCK game state
   
@@ -378,6 +380,8 @@ function finish(win) {
   start.textContent = 'Play Again';
   // re-enable start for replay
   start.disabled = false;
+  // re-enable level selection after game finishes
+  lvl.disabled = false;
   bgm.pause();
   
   if (!isMuted) {
