@@ -84,10 +84,10 @@ function autoPlayMusic() {
 function applyTheme(name) {
   if (name === 'light') {
     document.body.classList.add('light-mode');
-    if (themeBtn) themeBtn.textContent = '🌞 Light';
+    if (themeBtn) themeBtn.textContent = '☀️ Light';
   } else {
     document.body.classList.remove('light-mode');
-    if (themeBtn) themeBtn.textContent = '🌗 Dark';
+    if (themeBtn) themeBtn.textContent = '🌑 Dark';
   }
   try { localStorage.setItem('theme', name); } catch (e) {}
 }
